@@ -22,7 +22,6 @@ const tableStyle = {
   maxWidth: '900px',
   maxHeight: '200px',
   overflowY: 'scroll',
-  overflowX: 'hidden',
 }
 
 class DeputiesList extends Component {
@@ -71,9 +70,9 @@ class DeputiesList extends Component {
               <Table>
                 <TableHead>
                   <TableRow>
-                    <TableCell>Num</TableCell>
-                    <TableCell>Name</TableCell>
-                    <TableCell>Proffesion</TableCell>
+                    <TableCell padding="none">Num</TableCell>
+                    <TableCell padding="none">Name</TableCell>
+                    <TableCell padding="none">Proffesion</TableCell>
                   </TableRow>
                 </TableHead>
                 <TableBody>
@@ -82,9 +81,9 @@ class DeputiesList extends Component {
                       if (deputies[index] !== undefined) {
                         return (
                           <TableRow key={deputies[index].id} hover={true}>
-                            <TableCell>{index + 1}</TableCell>
-                            <TableCell>{deputies[index].name}</TableCell>
-                            <TableCell>{deputies[index].proffesion}</TableCell>
+                            <TableCell padding="none">{index + 1}</TableCell>
+                            <TableCell padding="none">{deputies[index].name}</TableCell>
+                            <TableCell padding="none">{deputies[index].proffesion}</TableCell>
                           </TableRow>
                         )
                       }
